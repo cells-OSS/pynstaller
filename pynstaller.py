@@ -9,7 +9,7 @@ import requests
 from packaging import version
 import pyfiglet
 
-__version__ = "v1.6"
+__version__ = "v1.5"
 
 
 def get_latest_release_tag():
