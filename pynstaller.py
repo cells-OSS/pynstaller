@@ -92,6 +92,19 @@ def install_chocolatey():
 def get_choco_cmd():
     return shutil.which("choco") or r"C:\ProgramData\chocolatey\bin\choco.exe"
 
+def install_packages(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+required_packages = ["pyfiglet", "requests", "packaging"]
+for package in required_packages:
+    try:
+        __import__(package)
+    except ImportError:
+        print(f"Installing required package(s) {package}...")
+        install_packages(package)
+
+os.system('cls' if os.name == 'nt' else 'clear')
+
 config_dir = os.path.join(os.getenv("APPDATA"), "pynstaller")
 
 os.makedirs(config_dir, exist_ok=True)
