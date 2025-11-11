@@ -142,7 +142,7 @@ TIP: To come back to this menu at any time, just type "back".
 
 print(welcomeMessage, menu)
 
-chooseOption = input("Which option would you like to choose(1/2/3)?: ")
+chooseOption = input("Which option would you like to choose(1/2/3/4)?: ")
 
 if chooseOption == "1":
 
