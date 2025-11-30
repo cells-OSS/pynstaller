@@ -131,9 +131,9 @@ if os.path.exists(welcomeMessage_config_path):
         welcomeMessage = f.read()
 else:
     welcomeMessage = """
-===================================================
+####################################################
                      pynstaller
-===================================================
+####################################################
 """
 
 if os.path.exists(figlet_config_path):
