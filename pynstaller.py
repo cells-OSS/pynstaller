@@ -243,13 +243,13 @@ if chooseOption == "3":
 
 if chooseOption == "4":
     settings_menu = """
-===================================================
+###################################################
                      Settings
     1 = Turn Auto Update On/Off
     2 = Change Welcome Message
     3 = Reset Welcome Message
     4 = Figlet Welcome Message
-===================================================
+####################################################
     """
 
     print(settings_menu)
@@ -260,11 +260,11 @@ if chooseOption == "4":
     
     if settingOption == "1":
         autoUpdateMenu = """
-===================================================
+####################################################
                      Auto Update
     1 = Enable Auto Updates
     2 = Disable Auto Updates
-===================================================
+####################################################
     """
 
         print(autoUpdateMenu)
