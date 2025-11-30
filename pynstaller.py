@@ -5,9 +5,6 @@ import os
 import sys
 import ctypes
 import tempfile
-import requests
-from packaging import version
-import pyfiglet
 
 __version__ = "v1.5"
 
@@ -102,6 +99,10 @@ for package in required_packages:
     except ImportError:
         print(f"Installing required package(s) {package}...")
         install_packages(package)
+
+import pyfiglet
+import requests
+from packaging import version
 
 os.system('cls' if os.name == 'nt' else 'clear')
 
