@@ -328,11 +328,11 @@ if chooseOption == "4":
 
     if settingOption == "4":
         figletWelcome = """
-============================================
+############################################
         Figlet Welcome Message
 1 = Turn on Figlet Welcome Message
 2 = Turn off Figlet Welcome Message
-============================================
+############################################
 """
         print(figletWelcome)
         figletOption = input("Which option would you like to choose(1/2)?: ")
