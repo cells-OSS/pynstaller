@@ -298,9 +298,9 @@ if chooseOption == "4":
 
     if settingOption == "2":
         welcome_messageMenu = """
-============================================
+####################################################
         Change Welcome Message
-============================================            
+####################################################            
 """
         print(welcome_messageMenu)
         config_path = os.path.join(config_dir, "welcome_message.conf")
